@@ -45,8 +45,8 @@ function Header() {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className='lg:hidden fixed inset-0 bg-[#5DA39D] z-50 flex flex-col items-center justify-center space-y-8'>
-            <button onClick={toggleMobileMenu} className='absolute top-4 right-4 text-gray-100 focus:outline-none'>
-              <X size={40} />
+            <button onClick={toggleMobileMenu} className='absolute top-4 right-4 text-gray-100 focus:outline-none border-2 border-[#88BFB8] rounded-xl p-1 mt-6'>
+              <X size={32} />
             </button>
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} onClick={toggleMobileMenu}>

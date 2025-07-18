@@ -28,8 +28,8 @@ const ClinicTitleAndTagline: React.FC = () => (
     <>
         {/* Mobile-specific text adjustments */}
         <div className="lg:hidden">
-            <div className='pl-2 text-center text-4xl text-white w-4/5'>Dr. Wai-man Lam & Associates</div>
-            <div className='text-center text-xl text-white my-2 pb-4 px-6'>Dental care for the whole family - since 1997</div>
+            <div className='pl-6 text-center text-3xl text-white w-11/12'>Dr. Wai-man Lam & Associates</div>
+            
         </div>
 
         {/* Desktop-specific text adjustments */}
@@ -51,8 +51,13 @@ export default function Home() {
                     <div className={`w-full bg-[#5DA39D] ${outfit.className}`}>
                         {/* Mobile and Desktop Header Content */}
                         <div className="flex lg:hidden"> {/* Mobile Layout */}
-                            <ClinicTitleAndTagline /> {/* Reused component for title/tagline */}
-                            <div><Header/></div>
+                            <div>
+                                <div className="flex">
+                                    <ClinicTitleAndTagline /> {/* Reused component for title/tagline */}
+                                    <div><Header/></div>
+                                </div>
+                                <div className='text-center text-xl text-white my-2 pb-4 px-6'>Dental care for the whole family - since 1997</div>
+                            </div>
                         </div>
 
                         <div className="hidden lg:flex"> {/* Desktop Layout */}
@@ -86,7 +91,7 @@ export default function Home() {
 
                 {/* Our Mission Section */}
                 <SectionContentWrapper>
-                    <div className={`${sectionWrapperClasses} ${servicesListContainerClasses} lg:mt-6`}>
+                    <div className={`${sectionWrapperClasses} ${servicesListContainerClasses} mt-4 lg:mt-6`}>
                         <div className={`lg:pl-2 lg:pr-2 py-4 lg:pt-2 lg:pb-2 px-8 rounded-4xl bg-[#12507B]`}>
                             <div className={`text-lg lg:text-2xl font-light lg:py-12 lg:px-18 py-4 rounded-4xl text-gray-100`}>
                                 <div className="text-2xl lg:text-4xl font-semibold lg:mb-4">Our mission</div>
