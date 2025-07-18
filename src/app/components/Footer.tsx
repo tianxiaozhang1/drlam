@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     return (
         <div className='bg-[#12507B] py-8 lg:py-0'>
-            <div className='2xl:w-[1260px] mx-auto  lg:py-12 text-gray-200 lg:space-y-8'>
+            <div className='2xl:w-[1260px] mx-auto  lg:py-12 text-gray-100 lg:space-y-8'>
                 <div className='text-lg lg:text-3xl text-center '>
                     <div className='font-semibold lg:font-medium'>Dr. Wai-man Lam & Associates</div>
                     <div>Dental care for the whole family - since 1997</div>
