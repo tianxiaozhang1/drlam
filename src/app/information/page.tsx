@@ -12,6 +12,7 @@ import StockWoman1 from '../../../public/photos/StockWoman1.jpg'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import PageTitle from '../components/PageTitle'
 
 function InformationPage() {
 
@@ -20,13 +21,7 @@ function InformationPage() {
             
             <Header/>
 
-            {/* Hero Section */}
-            <div className='w-full bg-[#5DA39D]'>
-                <div className={`${sectionWrapperClasses} pb-6 lg:pb-18 pt-6`}>
-                    <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
-                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>Dentistry Information</div>
-                </div>
-            </div>
+            <PageTitle PageTitleContent="Dentistry Information" />
 
             <div className='bg-[#e5e7eb] pt-6 lg:pt-12 pb-2'>
 
@@ -52,7 +47,7 @@ function InformationPage() {
 
                 </div>
 
-                <div className='text-4xl lg:text-7xl text-center text-[#12507B] py-6 lg:pb-12'>Brush Teeth.</div>
+                <div className='text-4xl lg:text-7xl text-center text-[#12507B] py-6 lg:pb-12'>Brush Teeth Bruh.</div>
             </div>
 
             <Footer/>

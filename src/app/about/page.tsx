@@ -4,6 +4,7 @@ import { outfit } from '../fonts'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import PageTitle from '../components/PageTitle'
 
 import WaiManLam from '../../../public/photos/waimanlam.jpg'
 import JasonWu from '../../../public/photos/jasonwu.jpg'
@@ -20,12 +21,7 @@ function AboutUs() {
         <div className={`${outfit.className} text-white`}>
             <Header/>
 
-            <div className='w-full bg-[#5DA39D]'>
-                <div className={`${sectionWrapperClasses} lg:pb-6 lg:pt-6`}>
-                    <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
-                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>About Us</div>
-                </div>
-            </div>
+            <PageTitle PageTitleContent="About Us" />
 
             <div className='w-full bg-[#003D74] px-4'>
                 <div className='2xl:w-[1260px] mx-auto lg:space-y-8 lg:py-8'>
