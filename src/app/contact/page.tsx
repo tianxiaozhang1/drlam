@@ -53,13 +53,13 @@ function Contact() {
 
                     {/* LEFT */}
                     <div className={`lg:pl-12 lg:pr-12 py-6 px-6 rounded-4xl text-[#12507B] lg:py-12 bg-[#fff] lg:h-[700px] `}>
-                        <div className={`text-base lg:text-4xl flex justify-center `}>
+                        <div className={`text-base lg:text-4xl flex justify-center lg:items-center`}>
                             <div className='space-y-6'>
                                 <div className='flex items-center space-x-4 '>
                                     <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
                                         <MapPinHouse size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
-                                    <div>
+                                    <div className='lg:text-3xl'>
                                         <div>4040 Finch Ave E, Suite 304</div>
                                         <div>Scarborough, ON M1S 4V5</div>
                                     </div>
