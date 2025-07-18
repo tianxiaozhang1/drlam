@@ -1,103 +1,159 @@
 import Image from "next/image";
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+import { outfit } from './fonts';
+
+import HomeMainPhoto from '../../public/photos/homemain2.png'
+
+import StockMan1 from './../../public/photos/StockMan1.jpg'
+import MarkTwain from './../../public/photos/MarkTwain.png'
+
+const sectionWrapperClasses = '2xl:w-[1260px] mx-auto';
+const servicesListContainerClasses = 'space-y-4 lg:space-y-12';
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    return (
+        <div>
+            <div className="w-full bg-[#5DA39D]">
+                <div className="2xl:w-[1500px] mx-auto">
+                    <Header/>
+                    <div className={`w-full bg-[#5DA39D] ${outfit.className}`}>
+                        <div className={`${sectionWrapperClasses} lg:pb-8 lg:pt-2`}>
+                            <div className='lg:pt-2 text-center text-5xl lg:text-7xl text-white'>Dr. Wai-man Lam & Associates</div>
+                            <div className='text-center text-2xl lg:text-4xl text-white my-2 pb-4 lg:pb-0'>Dental care for the whole family - since 1997</div>
+                        </div>
+                    </div>
+                </div>  
+                
+            </div>
+            <div>
+                <div className="2xl:w-[1260px] mx-auto bg-white pt-1 lg:pt-0">
+                    <div className={`mx-4 lg:mx-0 text-lg lg:text-4xl font-light mt-6  rounded-4xl bg-[#12507B] lg:flex`}>
+                        <div className='lg:w-3/5'>
+                            <Image
+                                src={HomeMainPhoto}
+                                alt="Man"
+                                className="w-full rounded-t-4xl lg:rounded-l-4xl"
+                            />
+                        </div>
+                        <div className={`lg:w-2/5 lg:py-18 px-8 lg:px-12 py-4 flex items-center text-gray-100 pb-6 lg:pb-0 ${outfit.className}`}>
+                            <div className="lg:space-y-2">
+                                <div>Welcome to our office!</div>
+                                <div>Our team of dental professionals are looking forward to taking care of your smile. Contact us today to schedule a dental visit for you and your family.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                <div className={`bg-[#fff] py-6 ${outfit.className}`}>
+                    <div className='mx-4 lg:mx-0' >
+                        <div className={`${sectionWrapperClasses} ${servicesListContainerClasses}`}>
+                            <div className={`lg:pl-2 lg:pr-2 py-4 lg:pt-2 lg:pb-2 px-8 rounded-4xl bg-[#12507B]`}>
+                                <div className={`text-lg lg:text-2xl font-light lg:py-12 lg:px-18 py-4 rounded-4xl  text-gray-100`}>
+                                    <div className="text-2xl lg:text-4xl font-semibold lg:mb-4">Our mission</div>
+                                    We are committed to providing the highest quality and precision in preventative, corrective and cosmetic dentistry. Strong teeth and healthy gums are essential for your overall health and well-being. We believe that a beautiful smile can lift your self-confidence, boost your career, and brighten your life. Whether it is your first or returning visit, you will find the same compassionate, professional care that will exceed your expectations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`bg-[#fff] pb-6 ${outfit.className}`}>
+                    <div className='' >
+                        <div className={`${sectionWrapperClasses} ${servicesListContainerClasses}`}>
+                            <div className={`lg:pl-2 lg:pr-2 pt-8 pb-6 lg:pt-2 lg:pb-2 px-8 rounded-4xl mx-4 lg:mx-0 bg-[#3D8E86]`}>
+                                <div className={`text-2xl lg:text-6xl font-light lg:py-12 px-6 lg:px-18 py-4 rounded-4xl text-gray-100`}>
+                                    <div>
+                                        <div className="text-center mb-6">General Dentistry</div>
+                                        <div className="grid lg:grid-cols-4 gap-4 lg:gap-6 text-2xl lg:text-4xl font-medium">
+                                            <div className="bg-white rounded-4xl text-[#3D8E86] p-4 flex justify-center text-center items-center">Cleaning</div>
+                                            <div className="bg-white rounded-4xl text-[#3D8E86] p-4 flex justify-center text-center items-center">Check-ups and X-rays</div>
+                                            <div className="bg-white rounded-4xl text-[#3D8E86] p-4 flex justify-center text-center items-center">Night Guards</div>
+                                            <div className="bg-white rounded-4xl text-[#3D8E86] p-4 flex justify-center text-center items-center">Mouth Guards</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`bg-[#fff] pb-6 ${outfit.className}`}>
+                    <div className='' >
+                        <div className={`${sectionWrapperClasses} ${servicesListContainerClasses}`}>
+                            <div className={`lg:pl-2 lg:pr-2 pt-8 pb-6 lg:pt-2 lg:pb-2 px-8 rounded-4xl mx-4 lg:mx-0 bg-[#5D8351]`}>
+                                <div className={`text-2xl lg:text-6xl font-light lg:py-12 px-6 lg:px-18 py-8 rounded-4xl  text-gray-100`}>
+                                    <div>
+                                        <div className="text-center mb-6">Cosmetic Dentistry</div>
+                                        <div className="grid lg:grid-cols-4 gap-4 lg:gap-6 text-2xl lg:text-4xl font-medium ">
+                                            <div className="bg-white rounded-4xl text-[#5D8351] p-4 flex justify-center text-center items-center">Bonding</div>
+                                            <div className="bg-white rounded-4xl text-[#5D8351] p-4 flex justify-center text-center items-center">Veneers</div>
+                                            <div className="bg-white rounded-4xl text-[#5D8351] p-4 flex justify-center text-center items-center">Implants</div>
+                                            <div className="bg-white rounded-4xl text-[#5D8351] p-4 flex justify-center text-center items-center">Teeth whitening</div>
+                                            <div className="hidden lg:flex"></div>
+                                            <div className="bg-white rounded-4xl text-[#5D8351] p-4 flex justify-center text-center items-center col-span-2">Pinhole surgical technique</div>
+                                            <div className="hidden lg:flex"></div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`bg-[#fff] pb-6 ${outfit.className}`}>
+                    <div className='' >
+                        <div className={`${sectionWrapperClasses} ${servicesListContainerClasses}`}>
+                            <div className={`rounded-4xl bg-[#3D8E86] lg:flex overflow-hidden mx-4 lg:mx-0`}>
+                                <div className={`lg:w-3/5 text-3xl lg:text-6xl font-light lg:py-12 px-6 lg:px-18 py-8 rounded-4xl text-gray-100 overflow-hidden`}>
+                                    <div>
+                                        <div className="text-center mb-6">Promotion</div>
+                                        <div className="text-2xl lg:text-4xl text-center">
+                                            Implant Special, starting from $1,999. Conditions apply.
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div className="lg:w-2/5 overflow-hidden">
+                                    <Image
+                                        src={StockMan1}
+                                        alt="Man"
+                                        className="w-full "
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`bg-[#fff] pb-6 ${outfit.className}`}>
+                    <div className='' >
+                        <div className={`${sectionWrapperClasses} ${servicesListContainerClasses}`}>
+                            <div className={`rounded-4xl bg-[#757CBB] lg:flex overflow-hidden mx-4 lg:mx-0`}>
+                                <div className="lg:w-1/2 overflow-hidden">
+                                    <Image
+                                        src={MarkTwain}
+                                        alt="Man"
+                                        className="w-full "
+                                    />
+                                </div>
+                                <div className={`lg:w-1/2 text-xl lg:text-6xl font-light lg:py-12 px-6 lg:px-18 py-8 rounded-4xl text-gray-100 overflow-hidden`}>
+                                    <div className=" h-full  flex items-center ">
+                                        <div className="lg:text-5xl text-start justify-center flex items-center h-full">
+                                            <div className="">
+                                                Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.
+                                                <div className="text-end mt-6">-- Mark Twain</div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <Footer/>      
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
