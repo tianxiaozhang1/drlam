@@ -93,9 +93,9 @@ function Contact() {
                                     <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
                                         <Clock size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
-                                    <div>
-                                        <div>Monday - Friday: 9:30 am - 7:00 pm</div>
-                                        <div>Saturday: 9:00 am - 6:00 pm</div>
+                                    <div className=''>
+                                        <div>Monday - Friday: 9:30am - 7pm</div>
+                                        <div>Saturday: 9am - 6pm</div>
                                         <div>Sunday: By appointment only</div>
                                     </div>
                                 </div>
