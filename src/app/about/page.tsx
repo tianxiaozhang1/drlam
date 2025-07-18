@@ -31,7 +31,7 @@ function AboutUs() {
                 <div className='2xl:w-[1260px] mx-auto lg:space-y-8 lg:py-8'>
                     <div className='text-4xl lg:text-6xl text-white font-semibold pt-6'>Our Team</div>
                     <div className='text-lg lg:text-2xl font-light mt-2 lg:mt-0'>
-                        We're a group of caring, highly experienced clinicians and administrative professionals who are here for just one reason - to take care of you. From the receptionist who greets you when you arrive to the doctor who looks after the health and appearance of your smile, each member of our team is committed to ensuring your visit is a pleasant and comfortable experience.
+                        We&apos;re a group of caring, highly experienced clinicians and administrative professionals who are here for just one reason - to take care of you. From the receptionist who greets you when you arrive to the doctor who looks after the health and appearance of your smile, each member of our team is committed to ensuring your visit is a pleasant and comfortable experience.
                     </div>
 
                     <div className='text-4xl lg:text-6xl text-white font-semibold py-6'>Dentists</div>

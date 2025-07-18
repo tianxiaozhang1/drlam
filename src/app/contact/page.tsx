@@ -41,7 +41,7 @@ function Contact() {
                             />
                         </div>
                         <div className='lg:w-1/2 lg:py-18 px-8 lg:px-12 py-6 flex items-center'>
-                            We're looking forward to taking care of you and your smile. Contact us today to schedule a dental visit for you and your family.
+                            We&apos;re looking forward to taking care of you and your smile. Contact us today to schedule a dental visit for you and your family.
                         </div>
                     </div>
                 </div>

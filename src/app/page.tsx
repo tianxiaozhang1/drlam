@@ -141,7 +141,7 @@ export default function Home() {
                                     <div className=" h-full  flex items-center ">
                                         <div className="lg:text-5xl text-start justify-center flex items-center h-full">
                                             <div className="">
-                                                Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.
+                                                Twenty years from now you will be more disappointed by the things that you didn&apos;t do than by the ones you did do.
                                                 <div className="text-end mt-6">-- Mark Twain</div>
                                             </div>
                                         </div>
