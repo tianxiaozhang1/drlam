@@ -15,32 +15,50 @@ const servicesListContainerClasses = 'space-y-4 lg:space-y-12';
 export default function Home() {
     return (
         <div>
+            {/* TITLE AND NAVIGATION */}
             <div className="w-full bg-[#5DA39D]">
-                <div className="2xl:w-[1500px] mx-auto">
-                    <Header/>
-                    <div className={`w-full bg-[#5DA39D] ${outfit.className}`}>
-                        <div className={`${sectionWrapperClasses} lg:pb-8 lg:pt-2`}>
-                            <div className='lg:pt-2 text-center text-5xl lg:text-7xl text-white'>Dr. Wai-man Lam & Associates</div>
-                            <div className='text-center text-2xl lg:text-4xl text-white my-2 pb-4 lg:pb-0'>Dental care for the whole family - since 1997</div>
+                {/* MOBILE */}
+                <div className="lg:hidden mx-auto">                    
+                    <div className={`w-full  bg-[#5DA39D] ${outfit.className}`}>
+                        <div className={`${sectionWrapperClasses} pt-6 `}>
+                            <div className="flex">
+                                <div className='pl-2 text-center text-4xl text-white w-4/5'>Dr. Wai-man Lam & Associates</div>
+                                <div><Header/></div>
+                            </div>
+                            <div className='text-center text-xl text-white my-2 pb-4 px-6'>Dental care for the whole family - since 1997</div>
+                        </div>
+                    </div>
+                </div>  
+
+                {/* DESKTOP */}
+                <div className="hidden lg:flex 2xl:w-[1260px] mx-auto">
+                    <div>
+                        <Header/>
+                        <div className={`w-full bg-[#5DA39D] ${outfit.className}`}>
+                            <div className={`${sectionWrapperClasses} lg:pb-8 lg:pt-2`}>
+                                <div className='lg:pt-2 text-center text-5xl lg:text-7xl text-white'>Dr. Wai-man Lam & Associates</div>
+                                <div className='text-center text-2xl lg:text-4xl text-white my-2 pb-4 lg:pb-0'>Dental care for the whole family - since 1997</div>
+                            </div>
                         </div>
                     </div>
                 </div>  
                 
             </div>
+
             <div>
-                <div className="2xl:w-[1260px] mx-auto bg-white pt-1 lg:pt-0">
-                    <div className={`mx-4 lg:mx-0 text-lg lg:text-4xl font-light mt-6  rounded-4xl bg-[#12507B] lg:flex`}>
+                <div className="2xl:w-[1260px] mx-auto bg-white pt-0 lg:pt-0">
+                    <div className={`mx-4 lg:mx-0 text-lg lg:text-4xl font-light mt-4  rounded-4xl bg-[#12507B] lg:flex`}>
                         <div className='lg:w-3/5'>
                             <Image
                                 src={HomeMainPhoto}
                                 alt="Man"
-                                className="w-full rounded-t-4xl lg:rounded-l-4xl"
+                                className="w-full rounded-t-4xl lg:rounded-4xl"
                             />
                         </div>
-                        <div className={`lg:w-2/5 lg:py-18 px-8 lg:px-12 py-4 flex items-center text-gray-100 pb-6 lg:pb-0 ${outfit.className}`}>
+                        <div className={`lg:w-2/5 px-8 lg:px-12 py-4 flex items-center text-gray-100 pb-6 lg:pb-0 ${outfit.className}`}>
                             <div className="lg:space-y-2">
                                 <div>Welcome to our office!</div>
-                                <div>Our team of dental professionals are looking forward to taking care of your smile. Contact us today to schedule a dental visit for you and your family.</div>
+                                <div className="leading-6 lg:leading-12">Our team of dental professionals are looking forward to taking care of your smile. Contact us today to schedule a dental visit for you and your family.</div>
                             </div>
                         </div>
                     </div>
