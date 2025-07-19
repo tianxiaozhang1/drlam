@@ -278,7 +278,7 @@ function Services() {
                             <AccordionText initialHeightPx={140} id="pinhole-description">
                                 If you have receding gums there is now a revolutionary new treatment method available. Dr. Wai Man Lam offers the Pinhole Surgical Technique™ as a noninvasive treatment option for patients with receding gums. There is no cutting, no sutures, and no second surgical site. It is the less invasive alternative to traditional receding gums surgery.
                                 <br />
-                                The "breakthrough" Pinhole Surgical Technique™ was invented and patented by Dr. John Chao and it is changing the way gum recession is treated. PST™ is an incision-free procedure where a very small hole is created in your gums, then special instruments are used to loosen the gum tissue and move it over the areas where there is not enough tissue. Many patients are surprised at how easy the procedure is and see a visible change the very same day!
+                                The &quot;breakthrough&quot; Pinhole Surgical Technique™ was invented and patented by Dr. John Chao and it is changing the way gum recession is treated. PST™ is an incision-free procedure where a very small hole is created in your gums, then special instruments are used to loosen the gum tissue and move it over the areas where there is not enough tissue. Many patients are surprised at how easy the procedure is and see a visible change the very same day!
                             </AccordionText>
                         </div>
                     </div>
