@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Header from './components/Header'
 import Footer from './components/Footer'
+import MobileNav from './components/MobileNav'
+// import HeroSection from './components/HeroSection'
 
 import { outfit } from './fonts';
 
@@ -45,7 +47,7 @@ export default function Home() {
     return (
         <div>
             {/* TITLE AND NAVIGATION */}
-            <div className="w-full bg-[#5DA39D]">
+            <div className=" w-full bg-[#5DA39D]">
                 {/* Consolidate MOBILE and DESKTOP header structures */}
                 <div className={`${sectionWrapperClasses} pt-6 lg:pt-2`}> {/* Apply common wrapper classes here */}
                     <div className={`w-full bg-[#5DA39D] ${outfit.className}`}>
@@ -54,7 +56,7 @@ export default function Home() {
                             <div>
                                 <div className="flex">
                                     <ClinicTitleAndTagline /> {/* Reused component for title/tagline */}
-                                    <div><Header/></div>
+                                    <div><MobileNav/></div>
                                 </div>
                                 <div className='text-center text-xl text-white my-2 pb-4 px-6'>Dental care for the whole family - since 1997</div>
                             </div>
@@ -69,6 +71,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            {/* <HeroSection pageTitle="Welcome" >
+                No additional children for the main hero text on the home page if it's already in HeroSection
+            </HeroSection> */}
 
             <div className="space-y-0 lg:pt-2">
                 <div className="2xl:w-[1260px] mx-auto bg-white pt-0 lg:pt-0">

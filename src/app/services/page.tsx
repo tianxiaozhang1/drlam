@@ -4,6 +4,8 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import Image from "next/image";
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import PageTitle from '../components/PageTitle'
+import MobileNav from '../components/MobileNav'
 
 import { outfit, inter } from '../fonts';
 import Bonding from '../../../public/services/Bonding.jpg';
@@ -234,7 +236,8 @@ function Services() {
 
         return () => {
             observer.disconnect();
-            document.body.style.backgroundColor = '#5AA4AE'; // Reset background on unmount
+            // Revert to the default defined in globals.css, typically --background
+            document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background').trim();
         };
     }, []);
 
@@ -242,11 +245,16 @@ function Services() {
         <div className={`${outfit.className} text-white`}>
             <Header/>
             {/* Hero Section */}
+            <div className='flex pt-4 lg:pt-0 bg-[#5DA39D]'>
+                <PageTitle PageTitleContent="Our Services" />
+                <MobileNav/>
+            </div>
+
             <div id="section1" ref={section1Ref} className='w-full bg-[#5DA39D] pb-6 lg:pb-0'>
                 <div className={`${sectionWrapperClasses} lg:pb-18 lg:pt-6`}>
-                    <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
-                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>Our Services</div>
-                    <div className={`text-xl lg:text-2xl font-light mt-0 lg:mt-12  lg:py-12 px-8 lg:px-24 py-8 rounded-4xl bg-[#12507B] `}>
+                    {/* <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
+                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>Our Services</div> */}
+                    <div className={`text-xl lg:text-2xl font-light mt-0 lg:mt-0  lg:py-12 px-8 lg:px-24 py-8 rounded-4xl bg-[#12507B] `}>
                         Here at Dr. Lam&apos;s Dental Office, we provide a comprehensive range of dental services for you and your family - from the youngest child to the great grandparent.
                         <div className='list-disc pl-0 lg:pl-12 lg:mt-6 '>
                             <li>You are never too old to have healthy teeth and gums.</li>
@@ -270,7 +278,7 @@ function Services() {
                             <AccordionText initialHeightPx={140} id="pinhole-description">
                                 If you have receding gums there is now a revolutionary new treatment method available. Dr. Wai Man Lam offers the Pinhole Surgical Technique™ as a noninvasive treatment option for patients with receding gums. There is no cutting, no sutures, and no second surgical site. It is the less invasive alternative to traditional receding gums surgery.
                                 <br />
-                                The “breakthrough” Pinhole Surgical Technique™ was invented and patented by Dr. John Chao and it is changing the way gum recession is treated. PST™ is an incision-free procedure where a very small hole is created in your gums, then special instruments are used to loosen the gum tissue and move it over the areas where there is not enough tissue. Many patients are surprised at how easy the procedure is and see a visible change the very same day!
+                                The "breakthrough" Pinhole Surgical Technique™ was invented and patented by Dr. John Chao and it is changing the way gum recession is treated. PST™ is an incision-free procedure where a very small hole is created in your gums, then special instruments are used to loosen the gum tissue and move it over the areas where there is not enough tissue. Many patients are surprised at how easy the procedure is and see a visible change the very same day!
                             </AccordionText>
                         </div>
                     </div>

@@ -13,6 +13,8 @@ import StockMan1 from '../../../public/photos/StockMan1.jpg'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import PageTitle from '../components/PageTitle'
+import MobileNav from '../components/MobileNav'
 
 function Contact() {
     // Google Maps embed URL for the address: 4040 Finch Ave E, Scarborough, ON M1S 4V5
@@ -27,12 +29,17 @@ function Contact() {
             
             <Header/>
 
+            <div className='flex pt-4 lg:pt-0 bg-[#5DA39D]'>
+                <PageTitle PageTitleContent="Contact Us" />
+                <MobileNav/>
+            </div>
+
             {/* Hero Section */}
             <div className='w-full bg-[#5DA39D]'>
                 <div className={`${sectionWrapperClasses} pb-6 lg:pb-18 lg:pt-6`}>
-                    <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
-                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>Contact Us</div>
-                    <div className={`text-xl lg:text-4xl font-light lg:mt-12 rounded-4xl bg-[#12507B] lg:flex`}>
+                    {/* <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
+                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>Contact Us</div> */}
+                    <div className={`text-xl lg:text-4xl font-light lg:mt-0 rounded-4xl bg-[#12507B] lg:flex`}>
                         <div className='lg:w-1/2'>
                             <Image
                                 src={StockMan1}
@@ -49,14 +56,14 @@ function Contact() {
 
             <div className='bg-[#e5e7eb] pt-6 lg:pt-12 '>
 
-                <div className={`${sectionWrapperClasses} ${servicesListContainerClasses} pb-6 lg:pb-0 grid lg:grid-cols-2 lg:gap-x-6`}>
+                <div className={`${sectionWrapperClasses} ${servicesListContainerClasses} pb-6 lg:pb-0 grid lg:grid-cols-2 lg:gap-x-6 gap-y-4 lg:gap-y-0`}>
 
                     {/* LEFT */}
-                    <div className={`lg:pl-12 lg:pr-12 py-6 px-6 rounded-4xl text-[#12507B] lg:py-12 bg-[#fff] lg:h-[700px] `}>
+                    <div className={`lg:pl-12 lg:pr-12 py-4 px-0 rounded-4xl text-[#12507B] lg:py-12 bg-[#fff] lg:h-[700px] `}>
                         <div className={`text-base lg:text-4xl flex justify-center lg:items-center`}>
                             <div className='space-y-6'>
-                                <div className='flex items-center space-x-4 '>
-                                    <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
+                                <div className='flex items-center space-x-4 my-2'>
+                                    <div className='border-2 lg:border-4 rounded-full border-[#106898] p-2 lg:p-4 -ml-1 mr-2'>
                                         <MapPinHouse size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
                                     <div className='lg:text-3xl'>
@@ -64,24 +71,24 @@ function Contact() {
                                         <div>Scarborough, ON M1S 4V5</div>
                                     </div>
                                 </div>
-                                <div className='flex items-center space-x-4'>
-                                    <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
+                                <div className='flex items-center space-x-4 my-2'>
+                                    <div className='border-2 lg:border-4 rounded-full border-[#106898] p-2 lg:p-4 -ml-1 mr-2'>
                                         <Phone size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
                                     <div>
                                         <div>(416) 292-8388</div>
                                     </div>
                                 </div>
-                                <div className='flex items-center space-x-4'>
-                                    <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
+                                <div className='flex items-center space-x-4 my-2'>
+                                    <div className='border-2 lg:border-4 rounded-full border-[#106898] p-2 lg:p-4 -ml-1 mr-2'>
                                         <Printer size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
                                     <div>
                                         <div>(416) 292-8399</div>
                                     </div>
                                 </div>
-                                <div className='flex items-center space-x-4'>
-                                    <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
+                                <div className='flex items-center space-x-4 my-2'>
+                                    <div className='border-2 lg:border-4 rounded-full border-[#106898] p-2 lg:p-4 -ml-1 mr-2'>
                                         <Mail size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
                                     <div>
@@ -89,8 +96,8 @@ function Contact() {
                                     </div>
                                 </div>
 
-                                <div className='flex items-center space-x-4 lg:text-2xl'>
-                                    <div className='border-4 rounded-full border-[#12507B] p-2 lg:p-4'>
+                                <div className='flex items-center space-x-4 my-2 lg:text-2xl'>
+                                    <div className='border-2 lg:border-4 rounded-full border-[#106898] p-2 lg:p-4 -ml-1 mr-2'>
                                         <Clock size={24} strokeWidth={1.5} className='w-[36px] h-[36px] lg:w-[56px] lg:h-[56px] ' />
                                     </div>
                                     <div className=''>
@@ -117,7 +124,7 @@ function Contact() {
                             className="rounded-4xl flex-grow" // flex-grow makes iframe take up remaining space
                         ></iframe>
                         {/* No longer absolute positioning. 'mt-auto' pushes it to the bottom. */}
-                        <div className="text-center  mt-4 pb-0 text-2xl">
+                        <div className="text-center  mt-4 pb-0 text-xl lg:text-2xl">
                             <Link
                                 href={googleMapsLink}
                                 target="_blank"

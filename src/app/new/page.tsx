@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import PageTitle from '../components/PageTitle'
+import MobileNav from '../components/MobileNav'
 
 import { outfit } from '../fonts'; 
 import StockWoman1 from '../../../public/photos/StockWoman1.jpg'
@@ -15,12 +17,17 @@ function NewPatient() {
         <div className={`${outfit.className} text-white`}>
             <Header/>
 
+            <div className='flex pt-4 lg:pt-0 bg-[#5DA39D]'>
+                <PageTitle PageTitleContent="New Patients" />
+                <MobileNav/>
+            </div>
+
             {/* Hero Section */}
             <div className='w-full bg-[#5DA39D]'>
-                <div className={`${sectionWrapperClasses} lg:pb-18 lg:pt-6 pb-6 lg:pb-0`}>
-                    <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
-                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>New Patients</div>
-                    <div className={`text-xl lg:text-4xl font-light lg:mt-12  rounded-4xl bg-[#12507B] lg:flex`}>
+                <div className={`${sectionWrapperClasses}  lg:pt-6 pb-0 lg:pb-12`}>
+                    {/* <div className='text-lg lg:text-4xl text-gray-50'>Dr. Wai-man Lam & Associates</div>
+                    <div className='text-4xl lg:text-9xl lg:mb-4 pb-4 lg:pb-0'>New Patients</div> */}
+                    <div className={`text-xl lg:text-4xl font-light lg:mt-0  rounded-4xl bg-[#12507B] lg:flex`}>
                         <div className='lg:w-1/2'>
                             <Image
                                 src={StockWoman1}

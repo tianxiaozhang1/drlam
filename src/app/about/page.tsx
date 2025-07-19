@@ -5,6 +5,7 @@ import { outfit } from '../fonts'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import PageTitle from '../components/PageTitle'
+import MobileNav from '../components/MobileNav'
 
 import WaiManLam from '../../../public/photos/waimanlam.jpg'
 import JasonWu from '../../../public/photos/jasonwu.jpg'
@@ -21,7 +22,10 @@ function AboutUs() {
         <div className={`${outfit.className} text-white`}>
             <Header/>
 
-            <PageTitle PageTitleContent="About Us" />
+            <div className='flex pt-4 lg:pt-0 bg-[#5DA39D]'>
+                <PageTitle PageTitleContent="About Us" />
+                <MobileNav/>
+            </div>
 
             <div className='w-full bg-[#003D74] px-4'>
                 <div className='2xl:w-[1260px] mx-auto lg:space-y-8 lg:py-8'>
